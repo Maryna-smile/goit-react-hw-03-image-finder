@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Component } from 'react';
 import css from './Modal.module.css';
 
@@ -16,13 +17,21 @@ export class Modal extends Component {
     }
   };
 
+  onBackdropClick = e => {
+    this.props.toggleModal();
+  };
+
   render() {
     return (
-      <div className={css.Backdrop}>
-        <div className={css.Modal}>
+      <div className={css.backdrop} onClick={this.onBackdropClick}>
+        <div className={css.modal}>
           <img src={this.props.url} alt="img" />
         </div>
       </div>
     );
   }
 }
+
+Modal.propTypes = {
+  toggleModal: PropTypes.func,
+};
