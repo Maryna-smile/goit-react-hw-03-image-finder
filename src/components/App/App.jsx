@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Hearts } from 'react-loader-spinner';
-import { Searchbar } from '../components/Searchbar/Searchbar';
-import { ImageGallery } from '../components/ImageGallery/ImageGallery';
-import { Modal } from '../components/Modal/Modal';
+import { Searchbar } from '../Searchbar/Searchbar';
+import { ImageGallery } from '../ImageGallery/ImageGallery';
+import { Modal } from '../Modal/Modal';
 import css from './App.module.css';
 
 export default class App extends Component {

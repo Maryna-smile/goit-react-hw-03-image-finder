@@ -4,7 +4,7 @@ import { Component } from 'react';
 import React from 'react';
 import ImageGalleryItem from 'components/ImageGalleryItem/ImageGalleryItem';
 import { Button } from 'components/Button/Button';
-import { fetchPictures } from '../api/api';
+import { fetchPictures } from '../../helpers/api/api';
 import css from './ImageGallery.module.css';
 
 export class ImageGallery extends Component {

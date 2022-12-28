@@ -18,7 +18,9 @@ export class Modal extends Component {
   };
 
   onBackdropClick = e => {
-    this.props.toggleModal();
+    if (e.currentTarget === e.target) {
+      this.props.toggleModal();
+    }
   };
 
   render() {
